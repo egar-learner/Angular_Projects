@@ -1,0 +1,8 @@
+<p>event-binding works!</p>
+
+<button (click)="callOnClickMethod()">Greet</button>
+{{greetStr}}
+
+<button (click)="greetStr = 'This is called from HTML'">HTML Greet</button>
+
+<button (mouseover) = "callOnMouseOver($event)">MouseOverAlert</button>

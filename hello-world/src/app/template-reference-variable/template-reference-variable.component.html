@@ -1,0 +1,7 @@
+<p>template-reference-variable works!</p>
+
+<p #pTagRef>Does this also captures</p>
+<input #inputTagRef type="text">
+<button (click) = "captureTemplateReferences(pTagRef,inputTagRef.value)">Click here</button>
+
+{{returnTempRef}}

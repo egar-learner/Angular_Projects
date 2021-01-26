@@ -1,0 +1,7 @@
+<p>for-ng-for works!</p>
+
+<button (click)="clickedOnButton()">Click here to render list</button>
+
+<div *ngFor="let strVar of displayList; index as i; first as f; last as l; odd as o"> 
+    {{strVar + ' ' + (i+1) + ' Is it the first element ' + f + ' Is it the last element '+ l + ' Is it an odd element ? '+ o }}
+</div>

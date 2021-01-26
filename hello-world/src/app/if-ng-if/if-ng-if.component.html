@@ -1,0 +1,13 @@
+<p>if-ng-if works!</p>
+
+<input [(ngModel)]="whichBlock" (change)="changeSelectionBlock()" type="checkbox" >
+{{whichBlock}}
+<p *ngIf="whichBlock ; then thenThis; else elseThis"></p>
+
+<ng-template #thenThis>
+    <p>This is if True block</p>
+</ng-template>
+
+<ng-template #elseThis>
+    <p>This is if False block</p>
+</ng-template>

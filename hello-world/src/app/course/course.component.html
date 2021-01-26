@@ -1,0 +1,8 @@
+<p>course works!</p>
+
+<!--This is the example of property bind which can bind string/boolean or any other type without any restriction-->
+<input [id] = "propBind" type = "text" value="Manish">
+
+<!--This is interpolation binding. Hence, it has a restriction that it can only bind the string attributes
+In the below example the disabled property is binded normally and the second id is binded using interpolation-->
+<input bind-disabled = "interBind" id = {{interBindStr}} type="text" value="Kumar">
